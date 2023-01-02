@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -46,8 +48,9 @@
         </div>
     </div>
     
-    <section class="seccion-productos">
-        <div class="prod-holder">
+    <section class="seccion-productos" datos-productos>
+
+      <div class="prod-holder">
             <div class="produto">
                 <img src="assets\canecasw.png" alt="caneca">
                 <p class="descrição">Producto xyz</p>
@@ -94,7 +97,8 @@
                 <p class="preco">60,00</p>
                 <a href="">Ver Producto</a>
             </div>
-        </div>
+        </div> 
+        
     </section>
 
     <div class="prod-titulo">
@@ -107,7 +111,8 @@
     </div>
     
     <section class="seccion-productos">
-        <div class="prod-holder">
+       
+         <div class="prod-holder">
             <div class="produto">
                 <img src="assets\jsxbox.png" alt="xbox">
                 <p class="descrição">Consola XYZ</p>
@@ -155,6 +160,7 @@
                 <a href="">Ver Producto</a>
             </div>
         </div>
+
     </section>
   
     <div class="prod-titulo">
@@ -167,6 +173,7 @@
     </div>
     
     <section class="seccion-productos">
+     
         <div class="prod-holder">
             <div class="produto">
                 <img src="assets\atari.png" alt="atari">
@@ -215,13 +222,18 @@
                 <a href="">Ver Producto</a>
             </div>
         </div>
+
     </section>
 </section>
 
     <section class="contacto">
+     <div class="contacto__container">
+
+     
+
             <div class="referencia">
                 <img src="assets\logo.png" alt="logo">
-                <p>Alura</p><p>Geek</p>
+                <p class="logo-azul">Alura</p><p>Geek</p>
             </div>
 
             <div class="links-utiles">
@@ -234,15 +246,29 @@
             </div>
 
             <div class="form">
+                <form action="">
                 <p>Hable con nosotros</p>
                     <div class="label-float">
-                      <input type="text" name="Nome" id="Nome" class="input-nombre" placeholder="Nombre">
+                      <input type="text" name="Nome" id="Nome" class="input-nombre" placeholder="Nombre" required pattern="[A-Za-z]\D{3,20}">
                       
                     </div>
                 
-                    <textarea name="mensagem" id="msg" cols="5" rows="5"></textarea>
-                <button>Enviar Mensaje</button>
+                    <textarea name="mensagem" id="msg" cols="5" rows="5" class="input-mensaje" placeholder="Escribe tu mensaje" required maxlength="50"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
             </div>
+
+        </div>
     </section> 
+  
+   <footer class="pie">
+      <p>Desarrollado por León Germán</p>
+      <p>2023</p>
+   </footer>
+
+ <!--  <script type="module" src="./controllers/productos-controllers.js" ></script> -->
+
+
 </body>
 </html>

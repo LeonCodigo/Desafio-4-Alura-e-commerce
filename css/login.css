@@ -1,0 +1,32 @@
+
+  
+/*Contacto*/
+
+.container-login
+{
+  padding: 5rem;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control h2{font-size: 1em;}
+
+.form-control input,
+.form-control button
+ {
+    margin: .8rem 0;
+    padding: 1em;
+    border: none;
+    font-size: 1em;
+    box-shadow: 1px 1px 1px gray;
+    width: 25%;
+ }
+
+ .form-control button{
+   
+   color: var( --texto-destaque);
+   background: var( --azul-destaque);
+ }

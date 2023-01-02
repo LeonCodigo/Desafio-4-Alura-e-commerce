@@ -1,21 +1,25 @@
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap" rel="stylesheet">
 <body>
     <header>
-    <div class="cabecera_container">
-        <img class="cabecera_logo" src="./assets/logo.svg" alt="AluraGeek logo">
+     <div class="logo-busqueda">
+                <div class="logo">
+                    <img src="assets\logo.png" alt="logo">
+                    <p class="logo-azul">Alura</p><p>Geek</p>
+                </div>
         <div class="busqueda">
-            <form action=""></form>
+            <form action=""></form>           
             <input type="search" class="busqueda_campo" placeholder="¿Qué deseas buscar?" name="search">
-            <button class="button-busqueda"><img src="./assets/lupa.png" alt="Icono Lupa"></button>
         </div>
-        <a href="login.html"><button class="login">Login</button> </a>
-        <button class="button-busqueda-login"><img src="./assets/lupa-negro.png" alt="Icono Lupa"></button> 
+      
     </div>
     </header>
     <div class="container-login">
@@ -27,4 +31,50 @@
             <button type="submit" name="entrar">Entrar</button>
         </form>
     </div>
+
+    <section class="contacto">
+        <div class="contacto__container">
+   
+        
+   
+               <div class="referencia">
+                   <img src="assets\logo.png" alt="logo">
+                   <p class="logo-azul">Alura</p><p>Geek</p>
+               </div>
+   
+               <div class="links-utiles">
+                   <a href="">Quienes somos</a> <br>
+                   <a href="">Política de Privacidad</a> <br>
+                   <a href="">Programa de fidelidad</a> <br>
+                   <a href="">Nuetras Tiendas</a> <br>
+                   <a href="">Quiero ser franquiciado</a> <br>
+                   <a href="">Anuncie aqui</a>
+               </div>
+   
+               <div class="form">
+                   <form action="">
+                   <p>Hable con nosotros</p>
+                       <div class="label-float">
+                         <input type="text" name="Nome" id="Nome" class="input-nombre" placeholder="Nombre" required pattern="[A-Za-z]\D{3,20}">
+                         
+                       </div>
+                   
+                       <textarea name="mensagem" id="msg" cols="5" rows="5" class="input-mensaje" placeholder="Escribe tu mensaje" required maxlength="50"></textarea>
+                   <button type="submit">Enviar Mensaje</button>
+   
+               </form>
+               </div>
+   
+           </div>
+       </section> 
+     
+      <footer class="pie">
+         <p>Desarrollado por León Germán</p>
+         <p>2023</p>
+      </footer>
+
+
+
+
+
 </body>

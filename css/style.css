@@ -6,6 +6,7 @@
     --texto-destaque: #FFFF;
     --azul-destaque: #2a7ae4;
     --bg-contacto: #Eaf2fd;
+    --texto-gral:#464646
   }
 
 /*--------------------Normalize--------------------*/
@@ -60,7 +61,7 @@ nav
   justify-content: space-between;
 }
 
-.logo{
+.logo,.referencia{
   display: flex;
   align-items: center;
 }
@@ -87,7 +88,7 @@ nav
   padding: 1% 3%;
   border: none;
   background-color: var(--input-bg);
-  background-image: url(./assets/lupa.png);
+  background-image: url(../assets/lupa.png);
   background-repeat: no-repeat;
   background-position:right;
   background-position-x: 320px;
@@ -118,7 +119,7 @@ nav
 
 .destaque{
   height: 352px;
-  background-image: url(./assets/banner.png);
+  background-image: url(../assets/banner.png);
   background-size: 100vw;
   background-repeat:no-repeat;
   padding: 32px;
@@ -197,6 +198,89 @@ nav
   margin-bottom: 50px;
 }
 
-
 /*--------------------Form Contacto--------------------*/
 
+.contacto{
+  background-color: var(--bg-contacto);
+  width: 100vw;
+  display: flex;
+  justify-content:center;
+}
+
+.contacto__container{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  padding: 3rem 0;
+  width: 60vw
+
+}
+
+.referencia img{
+  height: 30px;
+  width: 40px;
+}
+
+.referencia p{
+  font-size:26px;
+  font-weight:bold;
+  color:var(--texto-gral);
+}
+
+.referencia .logo-azul{
+  margin-left: 10px;
+  color:var(--azul-destaque);
+}
+
+.links-utiles a{
+  color:var(--texto-gral) ;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+
+
+.form{
+ width: 50%;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+ align-content: center;
+}
+
+.links-utiles{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form p{
+  font-weight: bold;
+  color:var(--texto-gral) ;
+  margin: 0;
+}
+
+.input-nombre,.input-mensaje, .form button
+ {
+  width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.5em;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+  }
+
+ .form button{
+  width: 35%;
+  color: var(--input-bg);
+  background: var(--azul-destaque);
+}
+
+.pie{
+  padding: 2.5em;
+  background:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.pie p{ margin: 0;  color:var(--texto-gral) ;}
