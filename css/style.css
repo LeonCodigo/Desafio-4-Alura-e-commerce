@@ -44,7 +44,7 @@ button{
 /*--------------------Header General--------------------*/
 header{
   background-color: var(--texto-destaque);
-  padding: 32.5px 155px;
+  padding: 1% 10%;
 }
 
 nav
@@ -54,7 +54,7 @@ nav
 }
 
 .logo-busqueda{
-  margin-left: 175px;
+  margin-left: 10%;
   width: 600px;
   display: flex;
   align-items: center;
@@ -118,42 +118,46 @@ nav
 /*--------------------Divs del Header--------------------*/
 
 .destaque{
-  height: 352px;
-  background-image: url(../assets/banner.png);
-  background-size: 100vw;
-  background-repeat:no-repeat;
-  padding: 32px;
+  height: 22vw;
+  width: 100%;  
+  margin-bottom: 3rem;
 }
 
 
 
 /*--------------------Banner Promocional--------------------*/
 .banner{
-  width: 750px;
-  height: 320px;
-  padding-left:300px;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-image: url(../assets/banner.png); 
+  background-repeat:no-repeat; 
+  padding:0 0 2% 20%;  
   display: flex;
   flex-direction:column;
   justify-content: end;
 }
 
+
 .banner h1{
   color: var(--texto-destaque);
-  font-size: 52px;
+  font-size: 3.5em;
   font-weight: bold;
+  margin:0;
 }
 
 .banner h4{
   color: var(--texto-destaque);
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: bold;
+  margin:1rem 0;
 }
 
 .banner button{
   background-color: var(--azul-destaque);
   border: none;
-  width: 130px;
-  height: 51px;
+  width: 10%;
+  height: 15%;
   color: var(--texto-destaque);
 }
 
@@ -191,11 +195,13 @@ nav
 }
 
 .seccion-productos{
-  height: 310px;
   width: 60vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+  display: flex;
+   flex-wrap:wrap;
 }
 
 /*--------------------Form Contacto--------------------*/
@@ -214,6 +220,17 @@ nav
   padding: 3rem 0;
   width: 60vw
 
+}
+
+.contacto__referencia--containter{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+
+.referencia{
+  margin-right: 8rem;
 }
 
 .referencia img{
@@ -260,17 +277,17 @@ nav
   margin: 0;
 }
 
-.input-nombre,.input-mensaje, .form button
+.input-nombre,.input-mensaje, .form button, .mostrar-mas button,.input-descripcion
  {
-  width: 100%;
+    width: 100%;
     margin: 0.5rem 0;
     padding: 1.5em;
     border: none;
     box-shadow: 1px 1px 1px gray;
   }
 
- .form button{
-  width: 35%;
+ .form button, .mostrar-mas button{
+  width: 170px;
   color: var(--input-bg);
   background: var(--azul-destaque);
 }
@@ -284,3 +301,21 @@ nav
 }
 
 .pie p{ margin: 0;  color:var(--texto-gral) ;}
+
+
+.mostrar-mas {
+  width:40%;
+  display: flex;
+   justify-content: flex-end; 
+  }
+
+  .input-descripcion{
+    width: 25%;
+    height: 6em;
+  }
+
+  .menu_Administrador__boton
+  {
+    color: var(--azul-destaque);
+  }
+

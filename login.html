@@ -2,6 +2,8 @@
     <link rel="stylesheet" href="./css/login.css">
     
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,19 +19,19 @@
                 </div>
         <div class="busqueda">
             <form action=""></form>           
-            <input type="search" class="busqueda_campo" placeholder="¿Qué deseas buscar?" name="search">
+            <input type="search" class="logo-busqueda_input" placeholder="¿Qué deseas buscar?" name="search">
         </div>
       
     </div>
     </header>
     <div class="container-login">
         
-        <form class="form-control">
+        <div class="form-control">
             <h2>Iniciar Sesión</h2>
-            <input type="text" name="usuario" placeholder="Escriba su correo electrónico">
-            <input type="password" name="clave" placeholder="Escriba su contraseña">
-            <button type="submit" name="entrar">Entrar</button>
-        </form>
+            <input type="email" name="usuario" placeholder="Escriba su correo electrónico" required >
+            <input type="password" name="clave" placeholder="Escriba su contraseña" required pattern="[A-Za-z]{3}[0-9]{3}">
+           <a href="producto.html" ><button type="submit" class="form__boton" name="entrar">Entrar</button></a> 
+        </div>
     </div>
 
     <section class="contacto">
@@ -37,19 +39,22 @@
    
         
    
-               <div class="referencia">
-                   <img src="assets\logo.png" alt="logo">
-                   <p class="logo-azul">Alura</p><p>Geek</p>
-               </div>
-   
-               <div class="links-utiles">
-                   <a href="">Quienes somos</a> <br>
-                   <a href="">Política de Privacidad</a> <br>
-                   <a href="">Programa de fidelidad</a> <br>
-                   <a href="">Nuetras Tiendas</a> <br>
-                   <a href="">Quiero ser franquiciado</a> <br>
-                   <a href="">Anuncie aqui</a>
-               </div>
+            <div class="contacto__referencia--containter">
+
+                <div class="referencia">
+                    <img src="assets\logo.png" alt="logo">
+                    <p class="logo-azul">Alura</p><p>Geek</p>
+                </div>
+    
+                <div class="links-utiles">
+                    <a href="">Quienes somos</a> <br>
+                    <a href="">Política de Privacidad</a> <br>
+                    <a href="">Programa de fidelidad</a> <br>
+                    <a href="">Nuetras Tiendas</a> <br>
+                    <a href="">Quiero ser franquiciado</a> <br>
+                    <a href="">Anuncie aqui</a>
+                </div>
+            </div>
    
                <div class="form">
                    <form action="">
