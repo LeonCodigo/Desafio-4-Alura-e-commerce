@@ -1,6 +1,6 @@
 @media(max-width:600px)
 {
-   body{width: auto;}
+   body{width: auto; }
 
     header{
         padding: 1% 0;
@@ -54,11 +54,20 @@
       font-size: .8em;
       padding: 10px;
     }
+    .geral-prods{padding-top: 5rem ;}
+    
     .prod-titulo{
-      margin-top: 5rem;
       width: 80vw;
+      align-items:baseline;
     }
-    .titulo p {font-size: 28px;}
+
+    .titulo p {
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+    .mostrar-mas p{
+      margin-bottom: 0;
+    }
 
     .geral-prods{
       margin:0 5%;
@@ -67,6 +76,14 @@
     .seccion-productos{
       width: 80vw;
       margin: 0;
+    }
+
+    .produto{
+      margin-top: 1.2rem;
+    }
+
+    .produto p{
+     margin-bottom: 0.5em;
     }
 
     .produto img{
@@ -104,10 +121,7 @@
 
     /*productos.css*/
 
-    .prod-titulo{
-      flex-wrap: wrap;
-      margin:1rem 0 2rem 0 }
-
+    
   .mostrar-mas button
   {
     margin:0;
